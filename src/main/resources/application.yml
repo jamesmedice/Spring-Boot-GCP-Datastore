@@ -5,8 +5,9 @@ server:
     port: ${DEFAULT_PORT:80}
 
 spring:
-    application:
-        name: app-datastore
+    data:
+        rest: 
+            base-path: /api
     cloud:
         config:
             namespace: default
