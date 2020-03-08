@@ -3,25 +3,22 @@ package com.medici.app.entity;
 import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
 import org.springframework.data.annotation.Id;
 
-import com.google.cloud.datastore.Key;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * 
- * @author a73s
- *
- */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-public class Instrument {
-
+@Entity(name = "books")
+public class Books {
+	
 	@Id
-	Key instrumentId;
+	Long id;
 
-	private String type;
+	String title;
+
+	String author;
+
+	int year;
 }
