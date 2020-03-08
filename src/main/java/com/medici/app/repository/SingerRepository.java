@@ -12,7 +12,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import com.medici.app.entity.Band;
 import com.medici.app.entity.Singer;
 
-@RepositoryRestResource
+@RepositoryRestResource(collectionResourceRel = "singers", path = "singer")
 public interface SingerRepository extends DatastoreRepository<Singer, String> {
 
 	@Query("select * from  |com.medici.app.entity.Singer| where last_name = @name")
