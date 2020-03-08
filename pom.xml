@@ -36,16 +36,12 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-gcp-starter-data-datastore</artifactId>
 		</dependency>
-		
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-rest</artifactId>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
+
 
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -61,10 +57,9 @@
 
 		<dependency>
 			<groupId>io.springfox</groupId>
-			<artifactId>springfox-spring-webmvc</artifactId>
+			<artifactId>springfox-data-rest</artifactId>
 			<version>${swagger2}</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
