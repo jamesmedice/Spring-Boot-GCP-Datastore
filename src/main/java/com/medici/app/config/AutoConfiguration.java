@@ -8,8 +8,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.medici.app.repository.TransactionalRepositoryService;
-
 @Configuration
 @EnableAutoConfiguration
 @EnableTransactionManagement
@@ -19,11 +17,6 @@ public class AutoConfiguration {
 	@Bean
 	DatastoreTransactionManager datastoreTransactionManager(DatastoreProvider datastore) {
 		return new DatastoreTransactionManager(datastore);
-	}
-
-	@Bean
-	public TransactionalRepositoryService transactionalRepositoryService() {
-		return new TransactionalRepositoryService();
 	}
 
 }

@@ -19,10 +19,11 @@ public class DataStoreController {
 
 	protected Logger logger = Logger.getLogger(DataStoreController.class.getName());
 
-	@RequestMapping(value = "/find", method = RequestMethod.GET)
-	public ResponseEntity<?> uploadText() {
+	@RequestMapping(value = "/save", method = RequestMethod.POST)
+	public ResponseEntity<?> getEntity() {
 
 		try {
+
 			return new ResponseEntity(null, new HttpHeaders(), HttpStatus.OK);
 
 		} catch (Exception e) {
