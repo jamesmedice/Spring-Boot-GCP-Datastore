@@ -19,7 +19,7 @@ public class DataStoreController {
 
 	protected Logger logger = Logger.getLogger(DataStoreController.class.getName());
 
-	@RequestMapping(value = "/save", method = RequestMethod.POST)
+	@RequestMapping(value = "/get", method = RequestMethod.GET)
 	public ResponseEntity<?> getEntity() {
 
 		try {
