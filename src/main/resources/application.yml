@@ -1,5 +1,5 @@
 #set up properties
-PROJECT_ID: qwiklabs-gcp-04-8a5c4778f804
+PROJECT_ID: qwiklabs-gcp-00-896f515ee537
 
 server:
     port: ${DEFAULT_PORT:80}
@@ -20,5 +20,5 @@ spring:
                 location: classpath:key.json  
             datastore:
                 namespace: ${DATASTORE_NAME:marketplace}
-                project-id: ${PROJECT_ID:qwiklabs-gcp-04-8a5c4778f804}
+                project-id: ${PROJECT_ID:qwiklabs-gcp-00-896f515ee537}
                 enabled: true
