@@ -12,7 +12,7 @@ import com.medici.app.entity.Expense;
 
 @CrossOrigin
 @RepositoryRestResource(collectionResourceRel = "expenses", path = "expenses")
-public interface ExpensesRepository extends DatastoreRepository<Expense, Long> {
+public interface ExpensesRepository extends DatastoreRepository<Expense, String> {
 
 	@Query("select * from  |com.medici.app.entity.Expense| where partnumber = @name")
 	Slice<Expense> findExpenseByPartnumber(@Param("name") String name, Pageable pageable);

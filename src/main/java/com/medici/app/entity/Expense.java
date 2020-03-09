@@ -1,8 +1,8 @@
 package com.medici.app.entity;
 
 import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
+import org.springframework.data.annotation.Id;
 
-import io.github.classgraph.json.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,15 +14,15 @@ import lombok.NoArgsConstructor;
 public class Expense {
 
 	@Id
-	private Long id;
+	Long id;
 
-	private String partnumber;
+	String partnumber;
 
-	private String partdescription;
+	String partdescription;
 
-	private int quantity;
+	int quantity;
 
-	private double priceperitem;
+	double priceperitem;
 
-	private double amount;
+	double amount;
 }
