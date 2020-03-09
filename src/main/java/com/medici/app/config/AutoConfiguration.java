@@ -10,15 +10,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.medici.app.entity.Book;
 import com.medici.app.entity.Expense;
+import com.medici.app.repository.BookRepository;
 import com.medici.app.repository.ExpensesRepository;
 
 @Configuration
-@EntityScan(basePackageClasses = { Expense.class })
+@EntityScan(basePackageClasses = { Expense.class, Book.class })
 @EnableAutoConfiguration
 @EnableTransactionManagement
 @EnableDatastoreAuditing
-@EnableDatastoreRepositories(basePackageClasses = { ExpensesRepository.class })
+@EnableDatastoreRepositories(basePackageClasses = { ExpensesRepository.class, BookRepository.class })
 public class AutoConfiguration {
 
 	@Bean
