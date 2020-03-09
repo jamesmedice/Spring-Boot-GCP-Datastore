@@ -1,8 +1,8 @@
 package com.medici.app.entity;
 
 import org.springframework.cloud.gcp.data.datastore.core.mapping.Entity;
-import org.springframework.data.annotation.Id;
 
+import io.github.classgraph.json.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,15 +10,19 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "books")
-public class Books {
-	
+@Entity(name = "expenses")
+public class Expense {
+
 	@Id
-	Long id;
+	private Long id;
 
-	String title;
+	private String partnumber;
 
-	String author;
+	private String partdescription;
 
-	int year;
+	private int quantity;
+
+	private double priceperitem;
+
+	private double amount;
 }

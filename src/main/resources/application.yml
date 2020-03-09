@@ -1,5 +1,5 @@
 #set up properties
-PROJECT_ID: qwiklabs-gcp-00-cb686be2a383
+PROJECT_ID: qwiklabs-gcp-04-8a5c4778f804
 
 server:
     port: ${DEFAULT_PORT:80}
@@ -16,8 +16,9 @@ spring:
             profile: dev, cloud, bigquery
             label: master
         gcp:
-            project-id: ${PROJECT_ID:qwiklabs-gcp-00-cb686be2a383}
             credentials:
                 location: classpath:key.json  
             datastore:
-                namespace: ${DATASTORE_NAME:marketplace}  
+                namespace: ${DATASTORE_NAME:marketplace}
+                project-id: ${PROJECT_ID:qwiklabs-gcp-04-8a5c4778f804}
+                enabled: true
